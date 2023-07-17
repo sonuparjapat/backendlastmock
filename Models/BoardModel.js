@@ -1,8 +1,7 @@
 const { ObjectId } = require("mongodb")
-
 const mongoose=require("mongoose")
 require('dotenv').config()
-const connection=mongoose.connect(process.env.MognoUrl)
+const connection=mongoose.connect(process.env.MongoUrl)
 const BoardSchema=mongoose.Schema({
 _id:ObjectId,
 name:String,
